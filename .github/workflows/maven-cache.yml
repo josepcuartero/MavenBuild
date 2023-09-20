@@ -18,7 +18,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
           cache: maven
-      - name: Build with Maven
+      - name: Build with Maven - 2
         run: mvn -B package --file pom.xml
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
